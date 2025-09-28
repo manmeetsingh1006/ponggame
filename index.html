@@ -1,1 +1,31 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pong Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pong Game</h1>
+  <div id="difficulty-selection">
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  </div>
+  <button id="pause-btn">Pause</button>
+  <div id="scoreboard">
+    <span id="player-score">0</span>
+    &nbsp;:&nbsp;
+    <span id="ai-score">0</span>
+  </div>
+  <canvas id="pong" width="800" height="500"></canvas>
+  <div id="game-over" style="display:none;">
+    <div id="game-over-message"></div>
+    <button id="restart-btn">Restart</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
