@@ -1,0 +1,12 @@
+# vSphere cost model configuration
+# Update these values to match your internal cost structure
+vsphere:
+  powered_on:
+    base_overhead: 10.0   # USD per VM per month
+    cpu_per_vcpu: 18.0    # USD per vCPU per month
+    ram_per_gib: 4.0      # USD per GiB RAM per month
+  powered_off:
+    base_overhead: 3.0    # USD per VM per month
+    cpu_per_vcpu: 18.0    # USD per vCPU per month
+    ram_per_gib: 4.0      # USD per GiB RAM per month
+    savings_multiplier: 0.7 # Fraction of cost considered as savings if deleted

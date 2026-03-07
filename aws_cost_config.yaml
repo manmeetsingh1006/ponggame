@@ -1,0 +1,12 @@
+# AWS cost model configuration
+aws:
+  ec2:
+    running_per_hour: 0.12   # USD per hour for running instance (default)
+    stopped_storage_gb: 0.10 # USD per GB per month for EBS
+    default_ebs_size_gb: 30  # Default EBS size for stopped instance
+  rds:
+    per_instance: 50.0       # USD per month (default)
+  s3:
+    per_gb: 0.023            # USD per GB per month
+  lambda:
+    per_million_invocations: 0.20

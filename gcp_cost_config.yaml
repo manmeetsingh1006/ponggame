@@ -1,0 +1,6 @@
+# GCP cost model configuration
+gcp:
+  persistent_disk:
+    unattached_per_disk: 3.0    # USD per month for unattached disk
+  storage:
+    per_gb: 0.02                # USD per GB per month

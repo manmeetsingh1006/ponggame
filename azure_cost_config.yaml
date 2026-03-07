@@ -1,0 +1,6 @@
+# Azure cost model configuration
+azure:
+  vm:
+    stopped_disk_per_vm: 25.0   # USD per month for managed disk of stopped VM
+  storage:
+    per_gb: 0.02                # USD per GB per month
